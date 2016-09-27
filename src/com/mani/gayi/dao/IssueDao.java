@@ -1,0 +1,21 @@
+package com.mani.gayi.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.mani.gayi.model.Issue;
+
+public class IssueDao {
+
+	private JdbcTemplate jdbcTemplate;
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	public int saveIssue(Issue iss) {
+		System.out.println("Entering IssueDao::saveIssue::"+iss.getIssueName());
+		String query = "insert into Issue values('" + iss.getIssueName() + "')";
+		System.out.println("The Query formed is"+query);
+		return jdbcTemplate.update(query);
+	}
+}
