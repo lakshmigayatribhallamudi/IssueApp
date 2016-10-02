@@ -1,11 +1,15 @@
 package com.mani.gayi.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.mani.gayi.model.Issue;
 
-public class IssueDao {
 
+
+public class IssueDao {
+	
+	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {

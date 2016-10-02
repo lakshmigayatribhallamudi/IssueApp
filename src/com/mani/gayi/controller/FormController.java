@@ -12,10 +12,10 @@ import com.mani.gayi.model.Issue;
 @Controller
 
 public class FormController {
-	
-	@Autowired
-	IssueDao issueDao;
-	
+
+@Autowired
+private IssueDao issueDao;
+
 	@RequestMapping(value="/", method = RequestMethod.GET)
 	public String getMyForm()
 	{
@@ -29,9 +29,8 @@ public class FormController {
 	public String processForm(@ModelAttribute("issueP") Issue issi){
 		
 		System.out.println("issi Name "+issi.getIssueName());
-		
-		int result = issueDao.saveIssue(issi);
-		System.out.println("Result is : "+result);
+		issueDao.saveIssue(issi);
+			
 		return "welcome";
 		
 	}
