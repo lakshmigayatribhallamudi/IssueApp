@@ -18,7 +18,7 @@ public class IssueDao {
 
 	public int saveIssue(Issue iss) {
 		System.out.println("Entering IssueDao::saveIssue::"+iss.getIssueName());
-		String query = "insert into Issue values('" + iss.getIssueName() + "')";
+		String query = "insert into issue values('" + iss.getIssueId()+"','"+iss.getIssueName() +"')";
 		System.out.println("The Query formed is"+query);
 		return jdbcTemplate.update(query);
 	}

@@ -25,13 +25,27 @@ private IssueDao issueDao;
 	}
 	
 	
-	@RequestMapping(value="/processMyForm")
+/*	@RequestMapping(value="/processMyForm")
 	public String processForm(@ModelAttribute("issueP") Issue issi){
 		
 		System.out.println("issi Name "+issi.getIssueName());
 		issueDao.saveIssue(issi);
 			
-		return "welcome";
+		return "welcome";*/
+		
+		
+
+		@RequestMapping(value="save")
+		public String processForm(@ModelAttribute("issueP") Issue issi){
+			System.out.println("issi Name "+issi.getIssueName());
+			System.out.println("issi Id"+issi.getIssueId());
+			issueDao.saveIssue(issi);
+			return "welcome";
+			
+		
+		
+		
+		
 		
 	}
 }
