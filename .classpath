@@ -22,10 +22,10 @@
 	<classpathentry kind="lib" path="C:/Library/Jars/A111/slf4j.api-1.6.1.jar"/>
 	<classpathentry kind="lib" path="C:/Library/Jars/A111/validation-api-1.0.0.GA.jar"/>
 	<classpathentry kind="lib" path="C:/Library/Jars/A111/xpp3-1.1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Library/Jars/A111/jackson-annotations-2.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Library/Jars/A111/jackson-core-2.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Library/Jars/A111/jackson-databind-2.2.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring"/>
 	<classpathentry kind="lib" path="C:/Library/Jars/A111/xstream-1.4.7.jar"/>
+	<classpathentry kind="lib" path="C:/Library/Jars/A111/jackson-annotations-2.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/Library/Jars/A111/jackson-core-2.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/Library/Jars/A111/jackson-databind-2.8.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
