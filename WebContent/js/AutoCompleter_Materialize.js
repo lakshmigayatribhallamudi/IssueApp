@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(function(){
 
 $('input.autocomplete').autocomplete({
     data: {
