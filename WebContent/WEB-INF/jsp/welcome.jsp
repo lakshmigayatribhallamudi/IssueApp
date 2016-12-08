@@ -25,23 +25,7 @@
 
 <body class="grey lighten-3">
 
-	
-    <ul class="collection">
-      <li class="collection-item">Alvin</li>
-      <li class="collection-item">Alvin</li>
-      <li class="collection-item">Alvin</li>
-      <li class="collection-item">Alvin</li>
-    </ul>
-
-
-	<spring:url value="/javascript/jquery-2.1.1.min.js" var="jQueryJS" />
-	<spring:url value="/javascript/materialize.min.js" var="materializeJS" />
-
-
-
-	<script src="${jQueryJS}"></script>
-	<script src="${materializeJS}"></script>
-
+	Hi karri kuuka
 
 
 
